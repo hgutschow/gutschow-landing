@@ -3,39 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GUTSCHOW | Linguistic Forensics</title>
+    <title>Gutschow | Linguistic Forensics</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    
     <style>
         :root {
-            --bg-color: #FFFFFF; --text-color: #121212; --sub-text: #666666; --border: #DDDDDD;
+            --bg-color: #FFFFFF;
+            --text-color: #121212;
+            --sub-text: #666666;
+            --border-color: #DDDDDD;
         }
+
         @media (prefers-color-scheme: dark) {
-            :root { --bg-color: #121212; --text-color: #FFFFFF; --sub-text: #888888; --border: #333333; }
+            :root {
+                --bg-color: #121212;
+                --text-color: #FFFFFF;
+                --sub-text: #888888;
+                --border-color: #333333;
+            }
         }
+
         body {
-            background-color: var(--bg-color); color: var(--text-color);
-            font-family: 'Inter', sans-serif; display: flex; flex-direction: column;
-            align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            /* Explicitly forcing Inter everywhere */
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
-        .container { text-align: center; width: 100%; max-width: 1200px; }
-        h1 { font-size: clamp(2.5rem, 10vw, 5.5rem); font-weight: 900; margin: 0; letter-spacing: -0.04em; }
-        p { color: var(--sub-text); font-size: clamp(0.7rem, 2vw, 0.9rem); margin-top: 24px; letter-spacing: 0.4em; text-transform: uppercase; }
-        .links { margin-top: clamp(40px, 8vh, 100px); }
+
+        .container { 
+            text-align: center;
+            width: 100%;
+        }
+
+        h1 { 
+            /* Mixed Case Gutschow */
+            font-size: clamp(2.5rem, 10vw, 5.5rem); 
+            font-weight: 900;
+            margin: 0; 
+            letter-spacing: -0.05em; /* Tight professional kerning */
+            line-height: 1;
+        }
+
+        p { 
+            color: var(--sub-text);
+            font-size: clamp(0.7rem, 2vw, 0.9rem);
+            margin-top: 1.5rem; 
+            font-weight: 400;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+        }
+
+        .links { 
+            margin-top: clamp(3rem, 10vh, 6rem); 
+        }
+
         a { 
-            display: inline-block; color: var(--text-color); text-decoration: none; border: 1px solid var(--border); 
-            padding: 16px 40px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; transition: 0.2s;
+            display: inline-block;
+            color: var(--text-color); 
+            text-decoration: none; 
+            border: 1px solid var(--border-color); 
+            padding: 16px 40px; 
+            font-size: 0.75rem; 
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            transition: all 0.2s ease;
         }
-        a:hover { background: var(--text-color); color: var(--bg-color); border-color: var(--text-color); }
+
+        a:hover { 
+            background: var(--text-color); 
+            color: var(--bg-color); 
+            border-color: var(--text-color);
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>GUTSCHOW</h1>
+        <h1>Gutschow</h1>
         <p>Linguistic Forensic Analysis</p>
         <div class="links">
-            <a href="mailto:contact@gutschow.net">CONTACT PRINCIPAL</a>
+            <a href="mailto:contact@gutschow.net">Contact Principal</a>
         </div>
     </div>
 </body>
