@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     
     <style>
+        /* This section controls the colors based on your System Settings */
         :root {
             --bg-color: #FFFFFF;
             --text-color: #121212;
@@ -28,8 +29,7 @@
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
-            /* Explicitly forcing Inter everywhere */
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Inter', sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -37,22 +37,18 @@
             min-height: 100vh;
             margin: 0;
             padding: 20px;
-            box-sizing: border-box;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        .container { 
-            text-align: center;
-            width: 100%;
-        }
+        .container { text-align: center; }
 
         h1 { 
-            /* Mixed Case Gutschow */
             font-size: clamp(2.5rem, 10vw, 5.5rem); 
             font-weight: 900;
             margin: 0; 
-            letter-spacing: -0.05em; /* Tight professional kerning */
-            line-height: 1;
+            letter-spacing: -0.05em;
+            /* This line ensures no CSS is forcing Uppercase */
+            text-transform: none !important; 
         }
 
         p { 
@@ -64,12 +60,9 @@
             text-transform: uppercase;
         }
 
-        .links { 
-            margin-top: clamp(3rem, 10vh, 6rem); 
-        }
-
         a { 
             display: inline-block;
+            margin-top: clamp(3rem, 10vh, 6rem);
             color: var(--text-color); 
             text-decoration: none; 
             border: 1px solid var(--border-color); 
@@ -84,7 +77,6 @@
         a:hover { 
             background: var(--text-color); 
             color: var(--bg-color); 
-            border-color: var(--text-color);
         }
     </style>
 </head>
