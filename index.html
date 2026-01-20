@@ -6,58 +6,99 @@
     <title>GUTSCHOW | Linguistic Forensics</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     
     <style>
+        :root {
+            /* Default: Day Mode (Light) */
+            --bg-color: #FFFFFF;
+            --text-color: #121212;
+            --sub-text: #666666;
+            --border-color: #DDDDDD;
+            --button-hover-bg: #121212;
+            --button-hover-text: #FFFFFF;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                /* Night Mode (Dark) */
+                --bg-color: #121212;
+                --text-color: #FFFFFF;
+                --sub-text: #888888;
+                --border-color: #333333;
+                --button-hover-bg: #FFFFFF;
+                --button-hover-text: #121212;
+            }
+        }
+
         body {
-            /* Background: Soft Charcoal (#121212) instead of pure black */
-            background-color: #121212;
-            /* Text: Muted Off-White (#E0E0E0) instead of pure white */
-            color: #E0E0E0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             font-family: 'Inter', sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
-            text-transform: uppercase;
-            letter-spacing: 2px; /* Slightly tighter for Inter */
+            padding: 20px;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
-        .container { text-align: center; }
+
+        .container { 
+            text-align: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
         h1 { 
-            font-size: 3.5rem; 
-            font-weight: 700;
-            margin-bottom: 0; 
-            border-right: 3px solid #E0E0E0; 
-            white-space: nowrap; 
-            overflow: hidden; 
-            animation: typing 2s steps(8), blink .5s step-end infinite alternate; 
+            /* Fluid Typography: min 2.5rem, max 5.5rem, grows with screen */
+            font-size: clamp(2.5rem, 10vw, 5.5rem); 
+            font-weight: 900;
+            margin: 0; 
+            letter-spacing: -0.04em; /* Premium kerning */
+            line-height: 0.9;
         }
+
         p { 
-            color: #888888; /* Dimmer gray for subtext */
-            font-size: 0.9rem; 
-            margin-top: 15px; 
+            color: var(--sub-text);
+            font-size: clamp(0.7rem, 2vw, 0.9rem);
+            margin-top: 24px; 
             font-weight: 400;
-            letter-spacing: 5px;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
         }
-        .links { margin-top: 60px; }
+
+        .links { 
+            margin-top: clamp(40px, 8vh, 100px); 
+        }
+
         a { 
-            color: #E0E0E0; 
+            display: inline-block;
+            color: var(--text-color); 
             text-decoration: none; 
-            border: 1px solid #444444; 
-            padding: 12px 28px; 
+            border: 1px solid var(--border-color); 
+            padding: 16px 40px; 
             font-size: 0.75rem; 
-            transition: all 0.3s ease;
             font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            transition: all 0.2s ease-in-out;
+            width: auto;
         }
+
         a:hover { 
-            background: #E0E0E0; 
-            color: #121212; 
+            background: var(--button-hover-bg); 
+            color: var(--button-hover-text); 
+            border-color: var(--button-hover-bg);
         }
-        
-        @keyframes typing { from { width: 0 } to { width: 100% } }
-        @keyframes blink { from { border-color: transparent } to { border-color: #E0E0E0 } }
+
+        /* Mobile specific adjustments */
+        @media (max-width: 600px) {
+            h1 { letter-spacing: -0.02em; }
+            a { width: 80%; padding: 14px 0; }
+        }
     </style>
 </head>
 <body>
