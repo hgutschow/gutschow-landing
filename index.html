@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GUTSCHOW | Linguistic Forensics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
     <style>
         body {
-            background-color: #000;
-            color: #fff;
-            font-family: 'Courier New', Courier, monospace;
+            /* Background: Soft Charcoal (#121212) instead of pure black */
+            background-color: #121212;
+            /* Text: Muted Off-White (#E0E0E0) instead of pure white */
+            color: #E0E0E0;
+            font-family: 'Inter', sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -16,23 +22,48 @@
             height: 100vh;
             margin: 0;
             text-transform: uppercase;
-            letter-spacing: 4px;
+            letter-spacing: 2px; /* Slightly tighter for Inter */
         }
         .container { text-align: center; }
-        h1 { font-size: 3rem; margin-bottom: 0; border-right: 2px solid #fff; white-space: nowrap; overflow: hidden; animation: typing 2s steps(8), blink .5s step-end infinite alternate; }
-        p { color: #555; font-size: 0.8rem; margin-top: 10px; }
-        .links { margin-top: 50px; }
-        a { color: #fff; text-decoration: none; border: 1px solid #333; padding: 10px 20px; font-size: 0.7rem; transition: 0.3s; }
-        a:hover { background: #fff; color: #000; }
+        h1 { 
+            font-size: 3.5rem; 
+            font-weight: 700;
+            margin-bottom: 0; 
+            border-right: 3px solid #E0E0E0; 
+            white-space: nowrap; 
+            overflow: hidden; 
+            animation: typing 2s steps(8), blink .5s step-end infinite alternate; 
+        }
+        p { 
+            color: #888888; /* Dimmer gray for subtext */
+            font-size: 0.9rem; 
+            margin-top: 15px; 
+            font-weight: 400;
+            letter-spacing: 5px;
+        }
+        .links { margin-top: 60px; }
+        a { 
+            color: #E0E0E0; 
+            text-decoration: none; 
+            border: 1px solid #444444; 
+            padding: 12px 28px; 
+            font-size: 0.75rem; 
+            transition: all 0.3s ease;
+            font-weight: 700;
+        }
+        a:hover { 
+            background: #E0E0E0; 
+            color: #121212; 
+        }
         
         @keyframes typing { from { width: 0 } to { width: 100% } }
-        @keyframes blink { from { border-color: transparent } to { border-color: white } }
+        @keyframes blink { from { border-color: transparent } to { border-color: #E0E0E0 } }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>GUTSCHOW</h1>
-        <p>Linguistic Forensic Analysis // Vault 1.0</p>
+        <p>Linguistic Forensic Analysis</p>
         <div class="links">
             <a href="mailto:hannah@gutschow.net">CONTACT PRINCIPAL</a>
         </div>
