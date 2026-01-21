@@ -3,43 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Gutschow</title>
+    <title>Gutschow | Private Office</title>
     
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22black%22/><text y=%22.9em%22 x=%2250%%22 font-size=%2270%22 text-anchor=%22middle%22 font-family=%22Inter, sans-serif%22 font-weight=%22900%22 fill=%22white%22>G</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22black%22/><text y=%22.95em%22 x=%2250%%22 font-size=%2260%22 text-anchor=%22middle%22 font-family=%22Inter, sans-serif%22 font-weight=%22600%22 fill=%22white%22>G</text></svg>">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <style>
-        :root {
-            --bg-color: #FFFFFF; --text-color: #121212; --sub-text: #666666; --border-color: #E5E5E5;
-        }
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-color: #111111; --text-color: #FFFFFF; --sub-text: #888888; --border-color: #222222;
-            }
-        }
+        :root { --bg-color: #FFFFFF; --text-color: #121212; --sub-text: #666666; --border: #E5E5E5; }
+        @media (prefers-color-scheme: dark) { :root { --bg-color: #111111; --text-color: #FFFFFF; --sub-text: #888888; --border: #2A2A2A; } }
+        
         html, body { height: 100%; width: 100%; margin: 0; padding: 0; overflow: hidden; background-color: var(--bg-color); }
         body { color: var(--text-color); font-family: 'Inter', sans-serif; display: flex; align-items: center; justify-content: center; transition: background-color 0.4s ease; }
+        
         .container { text-align: center; width: 100%; padding: 20px; box-sizing: border-box; }
-        h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 700; margin: 0; letter-spacing: -0.04em; }
+        
+        h1 { 
+            font-size: clamp(2rem, 7vw, 3.8rem); 
+            font-weight: 600; /* Sophisticated medium-bold */
+            margin: 0; 
+            letter-spacing: -0.03em; /* Tight, professional kerning */
+            text-transform: none; /* Forced Mixed Case */
+        }
+        
         p { 
-            color: var(--sub-text); font-size: clamp(0.6rem, 1vw, 0.7rem); 
-            margin-top: 0.75rem; font-weight: 400; letter-spacing: 0.5em; text-transform: uppercase; 
+            color: var(--sub-text); 
+            font-size: clamp(0.7rem, 1.2vw, 0.85rem); 
+            margin-top: 0.8rem; 
+            font-weight: 400; 
+            letter-spacing: 0.05em;
+            text-transform: none; /* Forced Mixed Case */
         }
-        .links { margin-top: clamp(3rem, 10vh, 5rem); }
+        
+        .links { margin-top: clamp(3rem, 10vh, 5.5rem); }
+        
         a { 
-            display: inline-block; color: var(--text-color); text-decoration: none; border: 1px solid var(--border-color); 
-            padding: 12px 50px; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; transition: 0.2s;
+            display: inline-block; 
+            color: var(--text-color); 
+            text-decoration: none; 
+            border: 1px solid var(--border); 
+            padding: 14px 55px; 
+            font-size: 0.75rem; 
+            font-weight: 600; 
+            letter-spacing: 0.02em;
+            transition: 0.2s ease; 
         }
+        
         a:hover { border-color: var(--text-color); background: var(--text-color); color: var(--bg-color); }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Gutschow</h1>
-        <p>Private Capital</p>
+        <p>Private Capital Management</p>
         <div class="links">
             <a href="mailto:info@gutschow.net">Inquiries</a>
         </div>
