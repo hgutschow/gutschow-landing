@@ -5,31 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Gutschow | Private Capital</title>
     
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22black%22/><text y=%22.95em%22 x=%2250%%22 font-size=%2260%22 text-anchor=%22middle%22 font-family=%22Inter, sans-serif%22 font-weight=%22600%22 fill=%22white%22>G</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22black%22/><text y=%2250%%22 x=%2250%%22 font-size=%2260%22 text-anchor=%22middle%22 dominant-baseline=%22central%22 font-family=%22Inter, sans-serif%22 font-weight=%22600%22 fill=%22white%22>G</text></svg>">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
     <style>
-        :root { --bg-color: #FFFFFF; --text-color: #121212; --sub-text: #666666; --border: #E5E5E5; }
-        @media (prefers-color-scheme: dark) { :root { --bg-color: #111111; --text-color: #FFFFFF; --sub-text: #888888; --border: #2A2A2A; } }
+        :root { 
+            --bg-color: #FFFFFF; 
+            --text-color: #121212; 
+            --sub-text: #666666; 
+            --border: #E5E5E5; 
+        }
+        @media (prefers-color-scheme: dark) { 
+            :root { 
+                --bg-color: #111111; 
+                --text-color: #FFFFFF; 
+                --sub-text: #888888; 
+                --border: #2A2A2A; 
+            } 
+        }
         
-        html, body { height: 100%; width: 100%; margin: 0; padding: 0; overflow: hidden; background-color: var(--bg-color); }
-        body { color: var(--text-color); font-family: 'Inter', sans-serif; display: flex; align-items: center; justify-content: center; -webkit-font-smoothing: antialiased; }
+        html, body { 
+            height: 100%; 
+            width: 100%; 
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: var(--bg-color); 
+        }
         
-        .container { text-align: center; width: 100%; padding: 20px; box-sizing: border-box; }
+        body { 
+            color: var(--text-color); 
+            font-family: 'Inter', sans-serif; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            -webkit-font-smoothing: antialiased; 
+        }
+        
+        .container { 
+            text-align: center; 
+            width: 100%; 
+            padding: 20px; 
+            box-sizing: border-box; 
+        }
         
         h1 { 
             font-size: clamp(2.5rem, 10vw, 4.5rem); 
             font-weight: 600; 
             margin: 0; 
             letter-spacing: -0.02em; 
+            text-transform: none;
         }
         
         p { 
             color: var(--sub-text); 
-            /* Set a solid minimum for mobile (12px) and scale up to 14px on desktop */
             font-size: clamp(0.75rem, 1.5vw, 0.85rem); 
             margin-top: 1.2rem; 
             font-weight: 400; 
@@ -37,7 +69,9 @@
             text-transform: uppercase; 
         }
         
-        .links { margin-top: clamp(4rem, 12vh, 6rem); }
+        .links { 
+            margin-top: clamp(4rem, 12vh, 6rem); 
+        }
         
         a { 
             display: inline-block; 
@@ -45,7 +79,6 @@
             text-decoration: none; 
             border: 1px solid var(--border); 
             padding: 16px 65px; 
-            /* Solid minimum for mobile (11px) */
             font-size: clamp(0.7rem, 1vw, 0.75rem); 
             font-weight: 600; 
             text-transform: uppercase;
@@ -53,16 +86,7 @@
             transition: 0.2s ease; 
         }
         
-        a:hover { border-color: var(--text-color); background: var(--text-color); color: var(--bg-color); }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Gutschow</h1>
-        <p>Private Capital</p>
-        <div class="links">
-            <a href="mailto:info@gutschow.net">Inquiries</a>
-        </div>
-    </div>
-</body>
-</html>
+        a:hover { 
+            border-color: var(--text-color); 
+            background: var(--text-color); 
+            color: var(--bg-color
